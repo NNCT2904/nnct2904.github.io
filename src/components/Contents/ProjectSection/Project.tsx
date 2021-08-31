@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography, Link } from '@material-ui/core';
 // import useStyles from '../Style';
 
 export interface ProjectProps {
@@ -12,11 +12,14 @@ const Project: FC<ProjectProps> = ({ title, description, url = '' }) => {
   // const classes = useStyles();
 
   const titleText = url ? (
-    <a href={url}>
-      <strong>{`${title}: `}</strong>
-    </a>
+    <Link href={url} target="blank">
+      <strong>{`${title}:`}</strong>
+    </Link>
   ) : (
-    <strong>{`${title}: `}</strong>
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
+    <Link href="#">
+      <strong>{`${title}:`}</strong>
+    </Link>
   );
 
   return (

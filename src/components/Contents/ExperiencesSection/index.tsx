@@ -32,14 +32,6 @@ const personalData = (): { experience: ExperienceMetadata } => ({
         'Back-end: ExpressJs, NodeJs, MongoDb',
       ],
     },
-    {
-      title: 'Sample job title',
-      companyName: 'Sample Company Name',
-      description: ['Desc1', 'Desc2'],
-      duration: 'Sample duration',
-      techIcons: ['node', 'js'],
-      technologies: ['node', 'js'],
-    },
   ],
 });
 

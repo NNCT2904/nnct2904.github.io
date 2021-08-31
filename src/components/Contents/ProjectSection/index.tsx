@@ -11,11 +11,15 @@ const projectsData = (): { projects: ProjectsMetadata } => ({
   projects: [
     {
       title: 'VAIT Discord bot',
-      description: 'A bot for VAIT Discord server, written in TypeScript',
+      description:
+        'A bot for Vietnamese Aussies in IT Discord server, written in TypeScript',
+      url: 'https://github.com/viet-aus-it/vait-discord-bot',
     },
     {
-      title: 'project 2',
-      description: 'description 2',
+      title: 'SafeAus - Australia GovHack 2021',
+      description:
+        'Collecting data from Government Datasets such as Crime Statistics and Open Space data and user submitted data as a baseline to evaluate the safety rating of public spaces, while maintaining user privacy and anonimity.',
+      url: 'https://hackerspace.govhack.org/projects/safeaus_making_australia_safer',
     },
   ],
 });
