@@ -19,10 +19,12 @@ const Education: FC<EducationProps> = ({ school, degree, major, duration }) => {
             {school}
           </Typography>
         </Box>
-        <Box color="primary.main">
-          <Typography variant="body1" className={classes.duration}>
-            {duration}
-          </Typography>
+        <Box
+          color="primary.main"
+          fontSize="body1.fontSize"
+          className={classes.duration}
+        >
+          {duration}
         </Box>
       </Box>
       <Typography variant="h5" className={classes.subheading5}>

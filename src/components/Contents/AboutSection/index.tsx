@@ -13,7 +13,7 @@ const AboutSection: FC = () => {
     */
   const firstname = 'THANH';
   const lastname = 'NGUYEN';
-  const address = 'Melbourne, Victoria, Austraila';
+  const address = 'Melbourne, Victoria, Australia';
   const email = 'nnct2000@gmail.com';
   const classes = useStyles();
 
@@ -22,15 +22,17 @@ const AboutSection: FC = () => {
       <Container>
         <Box>
           <div>
-            <Typography variant="h2">
+            <Typography variant="h1">
               <Box display="flex" flexWrap="wrap" mb={-1}>
                 {firstname}
                 <Box color="primary.main">{lastname}</Box>
               </Box>
-              <Box fontSize="h5.fontSize" color="text.secondary">
-                {`${address} - `}
-                <Link href={`mailto:${email}`}>{`${email}`}</Link>
-              </Box>
+              <Typography variant="h5">
+                <Box color="text.secondary">
+                  {`${address} - `}
+                  <Link href={`mailto:${email}`}>{`${email}`}</Link>
+                </Box>
+              </Typography>
             </Typography>
           </div>
 

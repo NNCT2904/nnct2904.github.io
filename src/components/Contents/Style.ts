@@ -25,6 +25,7 @@ const useStyles = makeStyles({
   },
   duration: {
     color: 'primary',
+    fontSize: '1rem',
   },
 });
 
