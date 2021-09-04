@@ -13,7 +13,7 @@ const personalData = (): { experience: ExperienceMetadata } => ({
       title: 'Software Developer Intern',
       companyName: 'Ford Motor Australia',
       description: [
-        'Develop newcomponents for Ford’s data collecting form and URL shortener, using MongoDB, Express.js,AngularJS and Node.js',
+        'Develop newcomponents for Ford’s data collecting form and URL shortener, using MongoDB, Express.js, AngularJS and Node.js',
         'Planned and implemented design patternand concepts',
         'Applied Agile process for team project management of 5 people',
       ],

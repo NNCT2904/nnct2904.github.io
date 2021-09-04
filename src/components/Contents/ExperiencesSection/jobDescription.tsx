@@ -51,7 +51,9 @@ const JobDescription: FC<JobDescriptionProps> = ({
       <div className={classes.list}>
         <ul>
           {technologies.map((tech) => (
-            <li key={tech}>{tech}</li>
+            <li key={tech}>
+              <Typography variant="body1">{tech}</Typography>
+            </li>
           ))}
         </ul>
         <Box display="flex" flexWrap="wrap">
