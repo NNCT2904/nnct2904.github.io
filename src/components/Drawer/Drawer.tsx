@@ -40,7 +40,7 @@ const DrawerContent: FC = () => {
               <ListItemText
                 primary={
                   <Typography variant="h6" align="center">
-                    {content}
+                    {content.toUpperCase()}
                   </Typography>
                 }
               />

@@ -7,16 +7,16 @@ const useStyles = makeStyles({
   },
   sectionheader: {
     marginBottom: 36,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
   },
   heading4: {
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
   },
   heading5: {
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
   },
   subheading5: {
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: 'gray',
   },
   list: {

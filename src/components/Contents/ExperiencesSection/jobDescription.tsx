@@ -30,7 +30,9 @@ const JobDescription: FC<JobDescriptionProps> = ({
           </Typography>
         </Box>
         <Box color="primary.main">
-          <Typography className={classes.duration}>{duration}</Typography>
+          <Typography variant="body1" className={classes.duration}>
+            {duration}
+          </Typography>
         </Box>
       </Box>
       <Typography variant="h5" className={classes.subheading5}>

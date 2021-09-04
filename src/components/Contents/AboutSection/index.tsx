@@ -23,20 +23,11 @@ const AboutSection: FC = () => {
         <Box>
           <div>
             <Typography variant="h2">
-              <Box
-                display="flex"
-                flexWrap="wrap"
-                fontWeight="fontWeightBold"
-                mb={-1}
-              >
+              <Box display="flex" flexWrap="wrap" mb={-1}>
                 {firstname}
                 <Box color="primary.main">{lastname}</Box>
               </Box>
-              <Box
-                fontSize="h5.fontSize"
-                fontWeight="fontWeightBold"
-                color="text.secondary"
-              >
+              <Box fontSize="h5.fontSize" color="text.secondary">
                 {`${address} - `}
                 <Link href={`mailto:${email}`}>{`${email}`}</Link>
               </Box>
