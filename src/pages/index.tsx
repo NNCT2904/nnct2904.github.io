@@ -1,5 +1,8 @@
 // import { Fragment } from 'react';
 import type { FC, ReactNode } from 'react';
+import { Box, useTheme } from '@material-ui/core';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 import Layout from '../components/Layout';
 import {
   About,
@@ -8,6 +11,7 @@ import {
   Projects,
   Skills,
 } from '../components/Contents';
+import useStyles from './Style';
 
 export interface SectionType {
   id: string;
@@ -15,6 +19,12 @@ export interface SectionType {
 }
 
 const IndexPage: FC = () => {
+  const classes = useStyles();
+
+  const theme = useTheme();
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const sections = [
     { id: 'about', content: <About /> },
     { id: 'experience', content: <Experiences /> },
@@ -25,7 +35,13 @@ const IndexPage: FC = () => {
 
   const children = sections.map(({ id, content }: SectionType) => (
     <section key={id} id={id}>
-      {content}
+      <Box
+        className={
+          isMobile ? classes.SectionContentmobile : classes.SectionContent
+        }
+      >
+        {content}
+      </Box>
       <hr />
     </section>
   ));

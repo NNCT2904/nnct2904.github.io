@@ -7,14 +7,20 @@ import {
 } from '@material-ui/core';
 import { FC } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { ImageAvatar } from '../Contents';
 import useStyles from './Style';
 
 const DrawerContent: FC = () => {
   const classes = useStyles();
 
+  const theme = useTheme();
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const tabs = [
-    { content: 'About', href: '#top' },
+    { content: 'About', href: '#about' },
     { content: 'Experience', href: '#experience' },
     { content: 'Education', href: '#education' },
     { content: 'Skills', href: '#skills' },
@@ -23,7 +29,7 @@ const DrawerContent: FC = () => {
 
   const scrollWithOffset = (el: any) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
+    const yOffset = isMobile ? -60 : 0;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   };
   return (

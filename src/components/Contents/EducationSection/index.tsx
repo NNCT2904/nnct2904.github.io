@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import Container from '@material-ui/core/Container';
-import { Typography } from '@material-ui/core';
+import { Typography, Box } from '@material-ui/core';
 import School from './School';
 import type { EducationProps } from './School';
 import useStyles from '../Style';
@@ -30,7 +30,7 @@ const EducationSection: FC = () => {
   return (
     <div className={classes.root}>
       <Container>
-        <div>
+        <Box>
           <Typography variant="h2" className={classes.sectionheader}>
             Education
           </Typography>
@@ -43,7 +43,7 @@ const EducationSection: FC = () => {
               key={school}
             />
           ))}
-        </div>
+        </Box>
       </Container>
     </div>
   );

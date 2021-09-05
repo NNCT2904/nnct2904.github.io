@@ -4,6 +4,8 @@ const useStyles = makeStyles({
   root: {
     width: '100%',
     maxWidth: 1000,
+    marginTop: '1.5rem',
+    marginBottom: '3rem',
   },
   sectionheader: {
     marginBottom: 36,

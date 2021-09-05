@@ -10,9 +10,10 @@ import {
   Drawer,
   Hidden,
   IconButton,
+  SwipeableDrawer,
 } from '@material-ui/core';
 import useStyles from './Style';
-import DrawerContent from './Drawer';
+import DrawerContent from './DrawerContent';
 
 export interface ResponsiveDrawerProps {
   firstname: string;
@@ -44,7 +45,7 @@ const ResponsiveDrawer: FC = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              Thanh Nguyen
+              Resume | Thanh Nguyen
             </Typography>
           </Toolbar>
         </AppBar>
@@ -52,11 +53,12 @@ const ResponsiveDrawer: FC = () => {
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden mdDown implementation="css">
-          <Drawer
+          <SwipeableDrawer
             variant="temporary"
             anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={mobileOpen}
             onClose={handleDrawerToggle}
+            onOpen={handleDrawerToggle}
             classes={{
               paper: classes.drawerPaper,
             }}
@@ -65,7 +67,7 @@ const ResponsiveDrawer: FC = () => {
             }}
           >
             <DrawerContent />
-          </Drawer>
+          </SwipeableDrawer>
         </Hidden>
         <Hidden smDown implementation="css">
           <Drawer
