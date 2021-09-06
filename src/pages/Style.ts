@@ -13,6 +13,7 @@ const useStyles = makeStyles(() =>
       display: 'flex',
       flexGrow: 1,
       align: 'center',
+      maxWidth: '80vw',
     },
   })
 );
