@@ -38,7 +38,7 @@ const AboutSection: FC = () => {
 
           <Typography variant="body1" gutterBottom>
             <Box fontWeight="fontWeightLight" textAlign="left" mt={3} mb={3}>
-              Final year Bachelor of IT in Deakin University with excellentwork
+              Final year Bachelor of IT in Deakin University with excellent work
               ethics and ability to study and adapt to various environment.
               Demonstrated IT industrial skills during Internship with Ford
               Motor Au and Leadership during teamwork assignment.
