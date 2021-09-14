@@ -25,9 +25,16 @@ const useStyles = makeStyles({
     color: 'gray',
     maxWidth: 700,
   },
+  socialList: {
+    fontSize: '3rem',
+  },
   duration: {
     color: 'primary',
-    fontSize: '1rem',
+    fontSize: 'medium',
+    margin: 1,
+  },
+  roundedButton: {
+    borderRadius: '5em',
   },
 });
 
