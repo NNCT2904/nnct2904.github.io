@@ -33,6 +33,12 @@ const projectsData = (): { projects: ProjectsMetadata } => ({
         'Development of a mobile application to be used as a learning resource for nurses interested in working in the speciality area. Following a Microservices architecture involving a .NET back-end, ReactJS and React Native front-ends, containerized and hosted the back-end as an Azure container instance',
       url: 'https://www.deakin.edu.au/about-deakin/news-and-media-releases/news/it-students-win-prestigious-2021-iawards-for-the-second-year-in-a-row',
     },
+    {
+      title: 'IBM Quantum Challenge - Fall 2021',
+      description:
+        "Demonstrated an ability to utilize Qiskit's application module and the specific classes to solve problems in the area of finance, natural sciences, machine learning and optimization. Able to solve a battery revenue knapsack optimization problem and find the optimized solution with QAOA.",
+      url: 'https://www.credly.com/badges/84ff1b26-7fc2-47f3-bb26-d9a28dcc6079/public_url',
+    },
   ],
 });
 
