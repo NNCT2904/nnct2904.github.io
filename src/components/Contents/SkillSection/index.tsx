@@ -20,10 +20,10 @@ const skillData = (): SkillsProp => ({
       description: [
         'JavaScript –TypeScript (NodeJS, Express.js, React and Angular)',
         'Java – C#',
-        'AWS (EC2, S3, RDS, etc.) and Azure (Container deployment)',
+        'AWS (EC2, S3, RDS, etc.) and Azure (Containers, VNet)',
         'Version Control management (Git)',
         'Experience in RESTful API and GraphQL',
-        'Experience in SQL (MySQL) and NoSQL (MongoDB)',
+        'Experience in SQL (MySQL) and NoSQL (MongoDB, DynamoDB)',
         'Ability to draft, evaluate and deliver components in Agile Development Cycle',
       ],
     },

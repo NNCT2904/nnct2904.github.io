@@ -12,13 +12,18 @@ const educationData = (): { education: EducationMetadata } => ({
     {
       school: 'Deakin University',
       degree: 'Bachelor of Information Technology',
-      major: 'Creative Technology',
+      description: [
+        'Major in Creative Technology',
+        'Graduated with Distinction',
+      ],
       duration: 'Jul 2019 - Oct 2021',
     },
     {
       school: 'Deakin College',
       degree: 'Diploma of Information Technology',
-      major: '',
+      description: [
+        'Recipient of Deakin College Vietnam Excellence Scholarship',
+      ],
       duration: 'Nov 2018 - Jun 2019',
     },
   ],
@@ -34,11 +39,11 @@ const EducationSection: FC = () => {
           <Typography variant="h2" className={classes.sectionheader}>
             Education
           </Typography>
-          {education.map(({ school, degree, major, duration }) => (
+          {education.map(({ school, degree, description, duration }) => (
             <School
               school={school}
               degree={degree}
-              major={major}
+              description={description}
               duration={duration}
               key={school}
             />

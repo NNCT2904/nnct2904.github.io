@@ -5,11 +5,16 @@ import useStyles from '../Style';
 export interface EducationProps {
   school: string;
   degree: string;
-  major: string;
+  description: string[];
   duration: string;
 }
 
-const Education: FC<EducationProps> = ({ school, degree, major, duration }) => {
+const Education: FC<EducationProps> = ({
+  school,
+  degree,
+  description,
+  duration,
+}) => {
   const classes = useStyles();
   return (
     <Box mb={5}>
@@ -30,9 +35,17 @@ const Education: FC<EducationProps> = ({ school, degree, major, duration }) => {
       <Typography variant="h5" className={classes.subheading5}>
         {degree}
       </Typography>
-      <Typography className={classes.list} gutterBottom>
-        {major}
-      </Typography>
+      <div className={classes.list}>
+        <ul>
+          {description.map((line) => (
+            <li key={line}>
+              <Typography variant="body1" key={line}>
+                {line}
+              </Typography>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Box>
   );
 };
