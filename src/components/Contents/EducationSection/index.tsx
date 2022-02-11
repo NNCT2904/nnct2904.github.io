@@ -11,6 +11,15 @@ const educationData = (): { education: EducationMetadata } => ({
   education: [
     {
       school: 'Deakin University',
+      degree: 'Bachelor of Information Technology Honours',
+      description: [
+        'Research Project: Exploration of Variation Quantum Algorithms',
+        // 'Current Quantum devices have some serious constrains due to noise during execution. VQA address those limitations by using a classical optimizer to train a parametrized quantum circuit. Some effects of this method are to mitigate errors while executing Quatum Algorithms and extend quantum Circuit depth.',
+      ],
+      duration: 'Feb 2022 - Oct 2022',
+    },
+    {
+      school: 'Deakin University',
       degree: 'Bachelor of Information Technology',
       description: [
         'Major in Creative Technology',
