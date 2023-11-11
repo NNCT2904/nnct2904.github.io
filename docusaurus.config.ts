@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ncng.github.io!',
+  title: 'nnct2904.github.io!',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -39,8 +39,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false, // Disable blog
         // {
@@ -62,10 +61,10 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Thanh Nguyen',
-      logo: {
-        alt: 'Thanh Nguyen Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'Thanh Nguyen Logo',
+      //   src: 'img/icon.png',
+      // },
       items: [
         {
           type: 'docSidebar',
@@ -128,7 +127,7 @@ const config: Config = {
     //       ],
     //     },
     //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} ncng.github.io, Inc. Built with Docusaurus.`,
+    //   copyright: `Copyright © ${new Date().getFullYear()} nnct2904.github.io, Inc. Built with Docusaurus.`,
     // },
     prism: {
       theme: prismThemes.github,
