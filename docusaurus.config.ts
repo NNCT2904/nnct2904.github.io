@@ -16,7 +16,8 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'nnct2904', // Usually your GitHub org/user name.
-  projectName: 'resume-page', // Usually your repo name.
+  projectName: 'nnct2904.github.io', // Usually your repo name.
+  deploymentBranch:'gh-page',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
