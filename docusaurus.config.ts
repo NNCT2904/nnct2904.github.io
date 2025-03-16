@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: "nnct2904", // Usually your GitHub org/user name.
   projectName: "nnct2904.github.io", // Usually your repo name.
   deploymentBranch: "gh-page",
-
+  trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
