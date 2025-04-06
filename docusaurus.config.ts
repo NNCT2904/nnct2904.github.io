@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Thanh Nguyen Home",
-  tagline: "Dinosaurs-based resume page",
+  title: "Research Portfolio",
+  tagline: "Blockchain Fraud Detection & Quantum Computing Research",
   favicon: "img/icon.png",
 
   // Set the production url of your site here
@@ -54,13 +54,46 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+        },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030,
+        min: 640,
+        steps: 2,
+      },
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/social-card.jpg",
+    image: "img/blockchain-researcher-social-card.jpg",
+    metadata: [
+      {
+        name: "description",
+        content:
+          "Thanh Nguyen is a blockchain security researcher specializing in fraud detection systems and quantum computing applications. Explore publications, projects, and research in cryptography, blockchain, and quantum technologies.",
+      },
+      {
+        name: "keywords",
+        content:
+          "blockchain security, fraud detection, quantum computing, cryptography, research, machine learning, blockchain applications",
+      },
+      { name: "author", content: "Thanh Nguyen" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
     navbar: {
       title: "Thanh Nguyen",
       // logo: {
